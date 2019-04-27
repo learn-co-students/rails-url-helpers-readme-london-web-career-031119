@@ -23,3 +23,11 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+<%= @students.each |t|
+t.name
+t.string
+t.integer
+t.number
+t.symbol
+%>
